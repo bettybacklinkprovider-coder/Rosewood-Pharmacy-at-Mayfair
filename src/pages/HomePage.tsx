@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageId } from '../types';
 import { GoldCrest } from '../components/GoldCrest';
+import { pharmacyImages } from '../assets/images';
 import {
   FileText,
   MessageCircle,
@@ -31,37 +32,37 @@ export const HomePage: React.FC<HomePageProps> = ({
       title: 'Prescription Services',
       description: 'Accurate and timely dispensing of NHS and private prescriptions with discreet personal consultations.',
       icon: FileText,
-      image: '/src/assets/images/services_prescription_care_1791453445352.jpg',
+      image: pharmacyImages.servicesPrescriptionCare,
     },
     {
       title: 'Medication Advice',
       description: 'Expert guidance on proper administration, side-effect management, and medication regimen reviews.',
       icon: MessageCircle,
-      image: '/src/assets/images/medication_advice_1791454062329.jpg',
+      image: pharmacyImages.medicationAdvice,
     },
     {
       title: 'Health & Wellness',
       description: 'Curated wellness advice and preventative health guidance tailored to your lifestyle and wellbeing.',
       icon: Sparkles,
-      image: '/src/assets/images/health_wellness_1791454075713.jpg',
+      image: pharmacyImages.healthWellness,
     },
     {
       title: 'Personalised Pharmacy Care',
       description: 'Bespoke dosage packaging, tailored consultation slots, and direct access to your pharmacist.',
       icon: UserCheck,
-      image: '/src/assets/images/personalised_care_1791454087709.jpg',
+      image: pharmacyImages.personalisedCare,
     },
     {
       title: 'Repeat Prescriptions',
       description: 'Effortless synchronization and reliable preparation for your recurring monthly medication routines.',
       icon: RefreshCw,
-      image: '/src/assets/images/repeat_prescriptions_1791454100645.jpg',
+      image: pharmacyImages.repeatPrescriptions,
     },
     {
       title: 'General Pharmacy Support',
       description: 'Everyday medical supplies, premium healthcare essentials, and professional over-the-counter advice.',
       icon: HeartHandshake,
-      image: '/src/assets/images/general_pharmacy_1791454111627.jpg',
+      image: pharmacyImages.generalPharmacy,
     },
   ];
 
@@ -70,31 +71,31 @@ export const HomePage: React.FC<HomePageProps> = ({
       title: 'Professional & Caring Service',
       description: 'Experienced registered pharmacists committed to attentive listening, empathy, and absolute patient dignity.',
       icon: Award,
-      image: '/src/assets/images/caring_pharmacist_service_1791454425577.jpg',
+      image: pharmacyImages.caringPharmacistService,
     },
     {
       title: 'Convenient Mayfair Location',
       description: 'Conveniently situated on North Row, moments from Oxford Street, Marble Arch, and Bond Street.',
       icon: MapPin,
-      image: '/src/assets/images/mayfair_storefront_exterior_1791453457762.jpg',
+      image: pharmacyImages.mayfairStorefrontExterior,
     },
     {
       title: 'Personalised Attention',
       description: 'We take the time to know each client personally, ensuring your treatment and preferences are catered to.',
       icon: UserCheck,
-      image: '/src/assets/images/personalised_attention_1791454446793.jpg',
+      image: pharmacyImages.personalisedAttention,
     },
     {
       title: 'Trusted Pharmacy Support',
       description: 'A discreet, dependable healthcare haven for local residents, international travelers, and Mayfair professionals.',
       icon: Shield,
-      image: '/src/assets/images/trusted_pharmacy_support_1791454463314.jpg',
+      image: pharmacyImages.trustedPharmacySupport,
     },
     {
       title: 'Modern Customer Experience',
       description: 'Seamless telephone coordination, fast-track collection, and digital repeat requests without queue delays.',
       icon: Clock,
-      image: '/src/assets/images/modern_experience_1791454477959.jpg',
+      image: pharmacyImages.modernExperience,
     },
   ];
 
@@ -105,7 +106,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         {/* Background image with deep purple overlay scrim */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_mayfair_pharmacy_1791453402027.jpg"
+            src={pharmacyImages.heroMayfairPharmacy}
             alt="Rosewood Pharmacy Mayfair luxury dispensary interior"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out"
@@ -182,7 +183,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="lg:col-span-5 relative order-2 lg:order-1">
               <div className="relative rounded-lg overflow-hidden border border-[#d4af37]/30 shadow-2xl group">
                 <img
-                  src="/src/assets/images/about_mayfair_apothecary_1791453424711.jpg"
+                  src={pharmacyImages.aboutMayfairApothecary}
                   alt="Pharmacist consultation at Rosewood Pharmacy Mayfair"
                   referrerPolicy="no-referrer"
                   className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -394,7 +395,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div>
                 <div className="relative h-44 w-full overflow-hidden bg-[#1e0f34]">
                   <img
-                    src="/src/assets/images/direct_pharmacist_call_1791454490614.jpg"
+                    src={pharmacyImages.directPharmacistCall}
                     alt="Direct access pharmacist phone support"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"

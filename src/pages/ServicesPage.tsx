@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PageId, ServiceItem } from '../types';
 import { GoldCrest } from '../components/GoldCrest';
+import { pharmacyImages } from '../assets/images';
 import {
   FileText,
   RefreshCw,
@@ -32,7 +33,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
       id: 'prescriptions',
       title: 'Prescription Services',
       tagline: 'Precision NHS & Private Prescription Dispensing',
-      image: '/src/assets/images/services_prescription_care_1791453445352.jpg',
+      image: pharmacyImages.servicesPrescriptionCare,
       description:
         'We dispense both NHS and private prescriptions with meticulous clinical accuracy. Every script is validated against existing regimens to identify potential contraindications, ensuring patient safety and peace of mind.',
       benefits: [
@@ -47,7 +48,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
       id: 'repeat-prescriptions',
       title: 'Repeat Prescriptions',
       tagline: 'Effortless Recurring Medication Management',
-      image: '/src/assets/images/repeat_prescriptions_1791454100645.jpg',
+      image: pharmacyImages.repeatPrescriptions,
       description:
         'Never run out of essential maintenance medications. We liaise directly with your GP surgery to request, track, and assemble your repeat prescriptions before your current supplies deplete.',
       benefits: [
@@ -62,7 +63,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
       id: 'medication-advice',
       title: 'Medication Advice',
       tagline: 'Private One-on-One Consultations with Registered Pharmacists',
-      image: '/src/assets/images/medication_advice_1791454062329.jpg',
+      image: pharmacyImages.medicationAdvice,
       description:
         'Have complete clarity regarding how, when, and why you take your medicines. Our pharmacists host private consultations to explain dosages, manage side-effects, and answer any treatment concerns.',
       benefits: [
@@ -77,7 +78,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
       id: 'health-wellness',
       title: 'Health & Wellness Support',
       tagline: 'Curated Preventative Care & Nutritional Guidance',
-      image: '/src/assets/images/health_wellness_1791454075713.jpg',
+      image: pharmacyImages.healthWellness,
       description:
         'Elevate your daily vitality with professional healthcare advice. We stock reputable, premium wellness products, therapeutic supplements, and dermatological skincare.',
       benefits: [
@@ -92,7 +93,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
       id: 'personalised-care',
       title: 'Personalised Pharmacy Care',
       tagline: 'Tailored Dosette Trays & Dedicated Patient Support',
-      image: '/src/assets/images/personalised_care_1791454087709.jpg',
+      image: pharmacyImages.personalisedCare,
       description:
         'For individuals managing complex multiple daily prescriptions, we provide bespoke compliance packaging (blister dosette packs) clearly separated by time of day, ensuring compliance and simplicity.',
       benefits: [
@@ -107,7 +108,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
       id: 'general-support',
       title: 'General Pharmacy Services',
       tagline: 'Comprehensive Everyday Healthcare & First-Aid Essentials',
-      image: '/src/assets/images/general_pharmacy_1791454111627.jpg',
+      image: pharmacyImages.generalPharmacy,
       description:
         'From high-grade first-aid supplies to travel health diagnostics and minor ailments advice, our dispensary provides immediate over-the-counter access to trusted clinical guidance.',
       benefits: [
@@ -196,7 +197,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
             <div className="lg:col-span-5">
               <div className="rounded-lg overflow-hidden border border-[#d4af37]/30 shadow-xl max-h-64">
                 <img
-                  src="/src/assets/images/services_prescription_care_1791453445352.jpg"
+                  src={pharmacyImages.servicesPrescriptionCare}
                   alt="Apothecary glassware and medicine at Rosewood Pharmacy"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"

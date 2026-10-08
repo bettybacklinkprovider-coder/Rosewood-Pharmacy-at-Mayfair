@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageId } from '../types';
 import { GoldCrest } from '../components/GoldCrest';
+import { pharmacyImages } from '../assets/images';
 import {
   ShieldCheck,
   Heart,
@@ -109,7 +110,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             <div className="lg:col-span-6">
               <div className="relative rounded-lg overflow-hidden border border-[#d4af37]/30 shadow-2xl">
                 <img
-                  src="/src/assets/images/about_mayfair_apothecary_1791453424711.jpg"
+                  src={pharmacyImages.aboutMayfairApothecary}
                   alt="Rosewood Pharmacy Mayfair pharmacist and consultation suite"
                   referrerPolicy="no-referrer"
                   className="w-full h-auto object-cover"
@@ -232,7 +233,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             <div className="lg:col-span-6 relative">
               <div className="rounded-lg overflow-hidden border border-[#d4af37]/30 shadow-2xl">
                 <img
-                  src="/src/assets/images/mayfair_storefront_exterior_1791453457762.jpg"
+                  src={pharmacyImages.mayfairStorefrontExterior}
                   alt="Rosewood Pharmacy storefront at 32 North Row Mayfair"
                   referrerPolicy="no-referrer"
                   className="w-full h-auto object-cover"
