@@ -1,0 +1,6 @@
+{
+  "name": "Rosewood Pharmacy at Mayfair",
+  "description": "Bespoke pharmacy and healthcare services in the heart of Mayfair, London. Exceptional prescription care, medication advice, and personal wellness support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
